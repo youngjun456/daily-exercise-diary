@@ -7,6 +7,20 @@
   </head>
   <body>
   <h1>2021년 10월 14일 가슴/어깨 운동</h1>
+<input id="night_day" type="button" value="night" onclick="
+if(document.querySelector('#night_day').value === 'night'){
+  document.querySelector('body').style.backgroundColor = 'black';
+  document.querySelector('body').style.color = 'white';
+  document.querySelector('#night_day').value = 'day';
+} else {
+  document.querySelector('body').style.backgroundColor = 'white';
+  document.querySelector('body').style.color = 'black';
+  document.querySelector('#night_day').value = 'night';
+}
+  ">
+
+
+
 <ol>
   <strong>펙덱 플라이</strong> <br>
   1set 15kg 15회 self feedback: 스트레칭 굳<br>

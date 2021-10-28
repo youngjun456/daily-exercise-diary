@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<link rel="stylesheet" href="diary.css">
+    <title>20211026</title>
+<script>
+function NightDayHandler(self){
+  var target = document.querySelector('body');
+  if(self.value === 'night'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    self.value = 'day';
+
+    var alist = document.querySelectorAll('strong');
+    var i = 0;
+    while(i < alist.length){
+    alist[i].style.color= 'powderblue';
+    i = i + 1;
+    }
+
+  } else {
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    self.value = 'night';
+
+    var alist = document.querySelectorAll('strong');
+    var i = 0;
+    while(i < alist.length){
+    alist[i].style.color= 'blue';
+    i = i + 1;
+    }
+  }
+}
+</script>
+  </head>
+  <body>
+  <h1>2021년 10월 26일 하체 운동</h1>
+  <input  type="button" value="night" onclick="
+ NightDayHandler(this);
+    ">
+<ol>
+  <strong>레그 익스텐션</strong> <br>
+  1set 50 15회 self feedback: 맛 좋아<br>
+  2set 70 15회 self feedback: 낫 베드<br>
+  3set 90 11회 self feedback: 오늘이 가장 안정적 인데? <br>
+  4set 110 7회 self feedback: 개무겁네 하<br>
+  5set 90  9회 self feedback: 개못하는데 나 <br>
+  <strong>스쿼트 </strong><br>
+  1set 40kg 10회 self feedback: 그냥 힘듬<br>
+  2set 50kg 10회 self feedback: 이거는 열개를 했네<br>
+  3set 60kg  7회 self feedback: 다 엉덩이로 가는 느낌<br>
+  4set 40kg 10회 self feedback: 이건 쉽단 말이지<br>
+  <strong>레그 프레스</strong><br>
+  1set 80kg  12회 self feedback: 종아리로 자극이 살짝오네<br>
+  2set 120kg 12회 self feedback: 뒤꿈치로 들기<br>
+  3set 160kg 12회 self feedback: 와우<br>
+  4set 160kg 10회 self feedback: 진짜 애매<br>
+  5set 160kg  5회 self feedback:  꼬리뼈가 아프네<br>
+  <strong>레그 익스텐션</strong><br>
+  1set 50kg   10회 self feedback: 뒤질거 같은데<br>
+  2set 62.5kg 11회 self feedback: 잘모르겠다 무릎에는 힘 x<br>
+  3set 75kg    5회 self feedback:  그냥 개시발임 <br>
+  4set 62.5kg  8회 self feedback:  지옥을 보고옴<br>
+  <strong>백 익스텐션</strong><br>
+  1set 25kg   15회 self feedback: 굿<br>
+  2set 37.5kg 10회 self feedback: 개굿<br>
+  3set 50kg    5회 self feedback: 힘듬 속쓰리다<br>
+</ol>
+</body>
+<h1>체크리스트</h1>
+<table border="2">
+
+
+<tr>
+  <td>운동 전 충분한 스트레칭을 하였나? <input type="checkbox"></td><td>운동시에 자극 위주로 진행하였나?<input type="checkbox"></td>
+</tr>
+<tr>
+  <td>운동시 관절의 개입은 최소화 하였나?<input type="checkbox"></td><td>운동 후 충분한 단백질 섭취를 하였나?<input type="checkbox"><td>
+</tr>
+<tr>
+  <td>운동시 온전히 집중을 하였나?<input type="checkbox"></td><td>당일 복근 운동 유무<input type="checkbox"></td>
+</tr>
+</table>
+</html>

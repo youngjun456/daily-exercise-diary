@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<link rel="stylesheet" href="diary.css">
+    <title>20211101</title>
+<script>
+function NightDayHandler(self){
+  var target = document.querySelector('body');
+  if(self.value === 'night'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    self.value = 'day';
+
+    var alist = document.querySelectorAll('strong');
+    var i = 0;
+    while(i < alist.length){
+    alist[i].style.color= 'powderblue';
+    i = i + 1;
+    }
+
+  } else {
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    self.value = 'night';
+
+    var alist = document.querySelectorAll('strong');
+    var i = 0;
+    while(i < alist.length){
+    alist[i].style.color= 'blue';
+    i = i + 1;
+    }
+  }
+}
+</script>
+  </head>
+  <body>
+  <h1>2021년 11월 1일 하체 운동</h1>
+  <input  type="button" value="night" onclick="
+ NightDayHandler(this);
+    ">
+<ol>
+  <strong>레그 익스텐션</strong> <br>
+  1set 50 15회 self feedback: 맛 좋아<br>
+  2set 70 12회 self feedback: 슉 슉슉 슉슉<br>
+  3set 90 12회 self feedback: 좋아 <br>
+  4set 110 5회 self feedback: 무릎에서 소리 났는데; ㅅㅂ;<br>
+  5set 90  9회 self feedback: 무거워; <br>
+  <strong>스쿼트 </strong><br>
+  1set 40kg 10회 self feedback: 고관절 쓰기 무릎에 힘x<br>
+  2set 50kg 10회 self feedback: 이거는 열개를 했네<br>
+  3set 50kg  8회 self feedback: 디질거 같은데 내릴때 두려워말고 허리를 피니 괜찮네<br>
+  4set 50kg  6회 self feedback: 디질거 같은데<br>
+  <strong>레그 프레스</strong><br>
+  1set 80kg  12회 self feedback: 스타크씨 속이 이상해요..<br>
+  2set 120kg 12회 self feedback: 빨리빨리할 이유가 없네 생각해보니<br>
+  3set 160kg 10회 self feedback: 개에바야 역대급 까진 아닌데 ㅈㄴ 힘드네<br>
+  4set 160kg 11회 self feedback: 이것도 허리 편히해서 누우니 안아프네<br>
+  5set 160kg 10회 self feedback:  오늘 약간 유레카 각임<br>
+  <strong>레그 익스텐션</strong><br>
+  1set 50kg   10회 self feedback: 뒤질거 같은데<br>
+  2set 62.5kg 10회 self feedback: ㅈㄴ 힘듬<br>
+  3set 62.5kg 10회 self feedback: ㅈㄴ힘듬 ㅅㅂ <br>
+  4set 62.5kg 10회 self feedback:  직근에 자극 위주로 하자<br>
+ 
+</ol>
+</body>
+<h1>체크리스트</h1>
+<table border="2">
+
+
+<tr>
+  <td>운동 전 충분한 스트레칭을 하였나? <input type="checkbox"></td><td>운동시에 자극 위주로 진행하였나?<input type="checkbox"></td>
+</tr>
+<tr>
+  <td>운동시 관절의 개입은 최소화 하였나?<input type="checkbox"></td><td>운동 후 충분한 단백질 섭취를 하였나?<input type="checkbox"><td>
+</tr>
+<tr>
+  <td>운동시 온전히 집중을 하였나?<input type="checkbox"></td><td>당일 복근 운동 유무<input type="checkbox"></td>
+</tr>
+</table>
+</html>

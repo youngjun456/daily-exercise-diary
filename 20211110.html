@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<link rel="stylesheet" href="diary.css">
+    <title>20211110</title>
+<script>
+function NightDayHandler(self){
+  var target = document.querySelector('body');
+  if(self.value === 'night'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    self.value = 'day';
+
+    var alist = document.querySelectorAll('strong');
+    var i = 0;
+    while(i < alist.length){
+    alist[i].style.color= 'powderblue';
+    i = i + 1;
+    }
+
+  } else {
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    self.value = 'night';
+
+    var alist = document.querySelectorAll('strong');
+    var i = 0;
+    while(i < alist.length){
+    alist[i].style.color= 'blue';
+    i = i + 1;
+    }
+  }
+}
+</script>
+  </head>
+  <body>
+  <h1>2021년 11월 10일 가슴/어깨 운동</h1>
+  <input  type="button" value="night" onclick="
+ NightDayHandler(this);
+    ">
+<ol>
+    <strong>펙덱 플라이</strong> <br>
+    1set 15kg 15회 self feedback: 좋은데<br>
+    2set 25kg 12회 self feedback: 좋아<br>
+    3set 35kg 10회 self feedback: 좋은데<br>
+
+    <strong>인클라인 프레스 머신</strong><br>
+    1set 20kg 15회 self feedback: 왼쪽이 고립이 덜 된듯<br>
+    2set 30kg 12회 self feedback: 괜찮은데<br>
+    3set 40kg 10회 self feedback: 10개 나이수<br>
+    4set 40kg  6회 self feedback: 아쒸 개무겁 왼쪽이 금방지침<br>
+    5set 30kg 10회 self feedback: 후하<br>
+    <strong>덤벨 벤치 프레스</strong><br>
+    1set 20kg 14회 self feedback: 나이스 벌려하면 자극지리네<br>
+    2set 24kg 12회 self feedback: 쌉좋아 오버그립 확실히하자<br>
+    3set 28kg 10회 self feedback: 좋아 확실히 무게가 올라가니 자극이 덜하네<br>
+    4set 28kg  9회 self feedback: 자극 찾으려고 너무 안내려도 될듯<br>
+    5set 28kg  8회 self feedback: 먼가 아쉽다. <br>
+    <strong>체스트 프레스(좁게) </strong><br>
+    1set 36kg 10회 self feedback: 원효대사 해골물<br>
+    2set 36kg 10회 self feedback: 오 씻 근데 이게 자극이 참 애매혀<br>
+    3set 36kg  8회 self feedback: 웰캐 무겁 <br>
+    4set 30kg  6회 self feedback: 어깨에 힘빡들갔어<br>
+    <strong>어시스턴트 딥스 </strong><br>
+    1set 50kg 15회 self feedback: 좋은데?<br>
+    3set 45kg 10회 self feedback: 좋아요<br>
+    4set 40kg  7회 self feedback: 아나<br>
+    <strong>숄더 프레스</strong><br>
+    1set 16kg 12회 self feedback: 자극 좋은데?<br>
+    2set 20kg  8회 self feedback: 왜 하나를 못들어!<br>
+    3set 20kg  9회 self feedback: 아우아우 좀안정적이였음<br>
+    4set 20kg  8회 self feedback: 늘었어 <br>
+    5set 20kg  8회 self feedback: 늘었어 <br>
+  </ol>
+</body>
+<h1>체크리스트</h1>
+<table border="2">
+
+
+<tr>
+<td>운동 전 충분한 스트레칭을 하였나? <input type="checkbox"></td><td>운동시에 자극 위주로 진행하였나?<input type="checkbox"></td>
+</tr>
+<tr>
+<td>운동시 관절의 개입은 최소화 하였나?<input type="checkbox"></td><td>운동 후 충분한 단백질 섭취를 하였나?<input type="checkbox"><td>
+</tr>
+<tr>
+<td>운동시 온전히 집중을 하였나?<input type="checkbox"></td><td>당일 복근 운동 유무<input type="checkbox"></td>
+</tr>
+</table>
+</html>

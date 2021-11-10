@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<link rel="stylesheet" href="diary.css">
+    <title>20211105</title>
+<script>
+function NightDayHandler(self){
+  var target = document.querySelector('body');
+  if(self.value === 'night'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    self.value = 'day';
+
+    var alist = document.querySelectorAll('strong');
+    var i = 0;
+    while(i < alist.length){
+    alist[i].style.color= 'powderblue';
+    i = i + 1;
+    }
+
+  } else {
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    self.value = 'night';
+
+    var alist = document.querySelectorAll('strong');
+    var i = 0;
+    while(i < alist.length){
+    alist[i].style.color= 'blue';
+    i = i + 1;
+    }
+  }
+}
+</script>
+  </head>
+  <body>
+  <h1>2021년 11월 5일 이두/삼두 운동</h1>
+  <input  type="button" value="night" onclick="
+ NightDayHandler(this);
+    ">
+<ol>
+  <strong>이지바 컬 </strong> <br>
+  1set 10kg 20회 self feedback: 팔꿈치 최대한 안들고 하니 좋네 <br>
+  2set 15kg 15회 self feedback: 오늘 자극이 달라 더 좋아<br>
+  3set 20kg 10회 self feedback: 2개 치팅 씀 <br>
+  4set 20kg  8회 self feedback: 두개 줄었어 근데 자극은 더 좋아짐<br>
+  5set 20kg  8회 self feedback: 홀리씻 자극은 뒤짐br>
+  <strong>케이블 푸쉬다운</strong><br>
+  1set 20kg 15회 self feedback: 애매혀<br>
+  2set 25kg 10회 self feedback: 괜찮네 썸리스로 잡는게 도움이 더 되는 느낌<br>
+  3set 30kg 10회 self feedback: 왼쪽 팔꿈치도 같이 써진 느낌이야<br>
+  4set 30kg  8회 self feedback: 레그 익스텐션과 같은 원리 <br>
+  5set 30kg  6회 self feedback: 맛있어 근데 <br>
+  <strong>얼터네이티브 덤벨컬</strong><br>
+  1set  8kg 10회 self feedback: 낫 베드<br>
+  2set 10kg 5회 self feedback:  5개가 나의 한계인건가<br>
+  3set  8kg 8회 self feedback:  진짜 더 들고 싶어요<br>
+  4set  8kg 6회  self feedback: 못해먹겠다<br>
+  <strong>케이블 푸쉬다운2</strong><br>
+  1set 20kg 10회 self feedback: 이게 자극이 더 잘오네<br>
+  2set 25kg 10회 self feedback: 이게 훨씬 맛있어<br>
+  3set 25kg  6회 self feedback: 이게 내 무게다<br>
+  4set 25kg  8회 self feedback: 쒯 <br>
+ 
+  <strong>케이블 컬 </strong><br>
+  1set 20kg10회 self feedback: 굿<br>
+  2set 25kg 8회 self feedback: 우씨<br>
+  3set 25kg 8회 self feedback: ㅅㅂ<br>
+  4set 25kg 6회 self feedback: 이두에 애도를 표합니다.<br>
+  </ol>
+</body> 
+<h1>체크리스트</h1>
+<table border="2">
+
+
+<tr>
+<td>운동 전 충분한 스트레칭을 하였나? <input type="checkbox"></td><td>운동시에 자극 위주로 진행하였나?<input type="checkbox"></td>
+</tr>
+<tr>
+<td>운동시 관절의 개입은 최소화 하였나?<input type="checkbox"></td><td>운동 후 충분한 단백질 섭취를 하였나?<input type="checkbox"><td>
+</tr>
+<tr>
+<td>운동시 온전히 집중을 하였나?<input type="checkbox"></td><td>당일 복근 운동 유무<input type="checkbox"></td>
+</tr>
+</table>
+</html>
